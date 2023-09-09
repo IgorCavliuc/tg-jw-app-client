@@ -1,8 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const telegram = window.Telegram.WebApp;
 
 const App = () => {
+  const userData = telegram.initDataUnsafe?.user;
+
+  console.log(userData);
+
   useEffect(() => {
     telegram.ready();
   }, []);
