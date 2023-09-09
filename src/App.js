@@ -1,11 +1,12 @@
 import { useEffect } from "react";
 
-const telegram = window.Telegram.WEbApp;
+const telegram = window.Telegram.WebApp;
 
 const App = () => {
   useEffect(() => {
     telegram.ready();
   }, []);
+
   const onClose = () => {
     telegram.close();
   };
