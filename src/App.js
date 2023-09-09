@@ -1,24 +1,21 @@
-import {useEffect} from "react";
+import { useEffect } from "react";
 
-const telegram = window.Telegram.WEbApp
+const telegram = window.Telegram.WEbApp;
 
 const App = () => {
-
-
-  useEffect(()=>{
-    tg.ready()
-  },[])
-  const onClose = ()=>{
-    tg.close( )
-  }
+  useEffect(() => {
+    telegram.ready();
+  }, []);
+  const onClose = () => {
+    telegram.close();
+  };
 
   return (
     <div className="App">
-    Hello
-
+      Hello
       <button onClick={onClose}>Close</button>
     </div>
   );
-}
+};
 
 export default App;
